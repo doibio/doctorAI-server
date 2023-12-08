@@ -9,7 +9,7 @@ but does not do that yet
 For now it just has a sqlite db
 
 To run:
-python3 create-db0.py
+python3 create-db.py
 python3 app.py
 
 We wrote tests!
