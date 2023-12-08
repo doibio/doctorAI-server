@@ -41,7 +41,8 @@ def create_database():
     # Insert test messages
     test_messages = [
         ('67890', 'Regular exercise can help reduce the risk of chronic diseases like heart disease, cancer, and diabetes, improving your chances of enjoying a longer and healthier life. Embracing an active lifestyle can significantly contribute to your overall well-being and longevity.', 'assistant'),
-        ('67890', 'Tell me more', 'user')
+        ('67890', 'Tell me more', 'user'),
+        ('67890', 'Regular physical activity, such as brisk walking, can help strengthen your heart and immune system, improving your overall health and potentially extending your life. Exercise has been scientifically proven to enhance cardiovascular health, aid in weight management, boost mental well-being, and reduce the risk of chronic diseases, all of which contribute to a longer, healthier life.', 'assistant')
     ]
     cur.executemany('INSERT INTO messages (conversation_id, text, sender) VALUES (?, ?, ?)', test_messages)
 

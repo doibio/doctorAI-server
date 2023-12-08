@@ -11,7 +11,7 @@ class TestChatbotAPI(unittest.TestCase):
         url = f"{self.BASE_URL}users/{self.USER_ID}/conversations/{self.CONVERSATION_ID}/messages"
         
         data = {
-            'message': 'Sample message text',
+            'message': 'Sample message text1',
         }
         
         response = requests.post(url, json=data)
